@@ -25,11 +25,13 @@
         /*
         iterate diagonally in the following way:
         firtst go through all 1s, then all 2s, then 3s, etc.
-        1 2 3 4 5
-        0 1 2 3 4
-        0 0 1 2 3
-        0 0 0 1 2
-        0 0 0 0 1
+        0 1 2 3 4 5 6
+        0 0 1 2 3 4 5
+        0 0 0 1 2 3 4
+        0 0 0 0 1 2 3
+        0 0 0 0 0 1 2
+        0 0 0 0 0 0 1
+        0 0 0 0 0 0 0
         */
         for (let offset = 1; offset < n; offset++) {
             for (let i = 0; i < n - offset; i++) {
